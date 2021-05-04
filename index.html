@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Práce s Local Storage</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Local Storage</h1>
+
+	<p>Local Storage je datové úložiště umístěné lokálně na počítači návštěvníka stránek. Lze do něj ukládat hodnoty, které v úložišti zůstávají "natrvalo" a jsou stránce k dispozici i při příští návštěvě nebo při obnovení stránky (refresh).</p>
+
+	<p>
+		Jednoduchý popis Local Storage najdeš třeba zde:<br>
+		<a href="https://www.w3schools.com/jsref/prop_win_localstorage.asp">https://www.w3schools.com/jsref/prop_win_localstorage.asp</a>
+	</p>
+
+	<hr>
+
+	<h2>Čtení z Local Storage</h2>
+
+	<p id="vysledek"></p>
+
+	<hr>
+
+	<h2>Zápis do Local Storage</h2>
+
+	<input id="hodnota" type="text" placeholder="zadej hodnotu">
+	<button onclick="ulozHodnotu()" class="btn-ulozit">Uložit do Local Storage</button>
+
+	<hr>
+
+	<h2>Smazání z Local Storage</h2>
+
+	<button onclick="smazatHodnotu()" class="btn-smazat">Smazat z Local Storage</button>
+
+
+	<script src="main.js"></script>
+</body>
+</html>
